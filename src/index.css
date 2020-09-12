@@ -9,6 +9,7 @@ body {
   font-family: myFirstFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("background.jpg");
 }
 
 code {

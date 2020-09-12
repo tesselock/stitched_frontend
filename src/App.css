@@ -9,9 +9,41 @@
   font-size: 100px;
 }
 
+.title {
+ 
+  top: 10px;
+  left: 20px;
+  font-size: 4rem;
+  position: absolute;
+}
+
+
+.button {
+  background-color: #ffffff;
+  font-family: myFirstFont;
+  width: 7em;
+  height: 2em;
+  border: none;
+  color:#ff6565;
+  padding: 15px 32px;
+  font-size: 50px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.register{
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
 .App-header {
   
-  background-image: url("background.jpg");
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,3 +57,4 @@
   color: #61dafb;
 }
 
+body { margin:0px; }
