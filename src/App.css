@@ -1,3 +1,9 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(AristaRegular.ttf);
+}
+
+
 .App {
   text-align: center;
 }
