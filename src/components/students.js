@@ -12,10 +12,12 @@ class Students extends Component {
             <div>
         <div className="register">
         I am a student
-        <Link to="/student/login">  
+        <Link to="/student/register">
         <button className="button" >LOGIN</button>
         </Link>
+        <Link to="/student/login">
         <button className="button" >REGISTER</button>
+        </Link>
         </div>
         
         </div>
