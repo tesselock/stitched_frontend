@@ -5,8 +5,9 @@ class teachers extends Component {
     render(){
         return(
             <div classname="register">
-        I am a teacher
-        </div>
+                I am a teacher
+            </div>
+            
         );
     }
 

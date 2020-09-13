@@ -1,14 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { HeaderForTeachers, HeaderForNonTeachers } from './StyledComponents.js';
-
-const PageContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-`;
 
 // vh and vw may cause unwanted scrollbar space (fix later)
 const PageHeader = styled.header`
@@ -44,14 +36,9 @@ const LinkStyle = {
     'text-decoration': 'none',
 }
 
-const ContentArea = styled.div`
-    display: flex;
-`;
-
-const StudentAssignments = () => {
+export const HeaderForTeachers = () => {
 
     return (
-    <PageContainer>
         <PageHeader>
             <Logo>StitchEd</Logo> 
                 <LinkWrap>
@@ -60,15 +47,16 @@ const StudentAssignments = () => {
                     <Link style={LinkStyle}>Analytics</Link>
                 </LinkWrap>
         </PageHeader>
-        <HeaderForNonTeachers/>
-        <HeaderForTeachers/>
-        <ContentArea>
-
-        </ContentArea>
-      </PageContainer>
-
-    
     )
 };
 
-export default StudentAssignments;
+export const HeaderForNonTeachers = () => {
+    return (
+        <PageHeader>
+            <Logo>StitchEd</Logo> 
+        </PageHeader>
+    )
+};
+
+
+
