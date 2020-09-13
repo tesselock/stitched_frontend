@@ -10,7 +10,7 @@
 }
 
 .title {
- 
+  background-color: #ffffff;
   top: 10px;
   left: 20px;
   font-size: 4rem;
@@ -29,6 +29,7 @@
   font-size: 50px;
   border-radius: 5px;
   margin: 20px;
+  
 }
 
 .button:hover{
@@ -39,10 +40,34 @@
 .register{
   display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
+  
   text-align: center;
   font-size: 80px;
   color: white;
+ 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header '
+    ' main right '
+    'menu footer'
+    ;
+  grid-gap: 10px;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 .App-header {
   min-height: 25vh;
