@@ -1,26 +1,27 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from "react-router-dom";
-
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {hot} from 'react-hot-loader';
 import './App.css';
 import students from './components/students'
 import teachers from './components/students'
 import welcome from './components/welcome'
+import StudentAssignments from './components/studentAssignments';
 
 function App() {
   return (
     <Router>
-    <div className="container" >
-      <header className="App-header">
-       <div className="title">       
-          StitchEd       
-        </div> 
-      </header>
+
+    <div>
+      <Switch>
+          <Route path='/student' exact component={students}/>
+          <Route path='/teacher' exact component={teachers}/>
+          <Route path='/student/assignments' component={StudentAssignments}/>
+          <Route path='/' exact component={welcome}/>
+      </Switch>
     </div>
-    <Route path='/' component={welcome}/>
-    <Route path='/student' component={students}/>
-    <Route path='/teacher' component={teachers}/>
+
     </Router>
   );
 }
 
-export default App;
+export default hot(module)(App);
