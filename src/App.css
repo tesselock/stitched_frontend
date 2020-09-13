@@ -3,14 +3,12 @@
   src: url(AristaRegular.ttf);
 }
 
-
 .App {
   text-align: center;
   font-size: 100px;
 }
 
 .title {
- 
   top: 10px;
   left: 20px;
   font-size: 4rem;

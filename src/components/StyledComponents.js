@@ -4,20 +4,21 @@ import styled from 'styled-components';
 
 // vh and vw may cause unwanted scrollbar space (fix later)
 const PageHeader = styled.header`
+    height: 10%;
+    background-color: purple;
     width: 100%;
     display: flex;
-    margin-top: 0;
-    position: relative;
+    margin-top: 0; 
+  
 `;
 
 //flex grow might cause issues
 const Logo = styled.div`
     font-family: myFirstFont;
     src: url(AristaRegular.ttf);
-    position: relative;
     flex-grow: 5; 
-    top: 10px;
-    left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
     font-size: 4rem;
     
 `;
@@ -25,11 +26,10 @@ const Logo = styled.div`
 // not perfect, eyeballed margins
 const LinkWrap = styled.div`
     flex-grow: 1;
-    top: 30px;
-    left: 20px;
+    padding-top: 45px;
     font-size: 1.5rem;
     textDecoration: none;
-    position: relative;
+  
 `;
 
 const LinkStyle = {

@@ -5,21 +5,17 @@ import './App.css';
 import students from './components/students'
 import teachers from './components/students'
 import welcome from './components/welcome'
-import StudentAssignments from './components/studentAssignments';
+import TeacherAssignments from './components/TeacherAssignments';
 
 function App() {
   return (
     <Router>
-
-    <div>
       <Switch>
           <Route path='/student' exact component={students}/>
           <Route path='/teacher' exact component={teachers}/>
-          <Route path='/student/assignments' component={StudentAssignments}/>
+          <Route path='/teacher/assignments' component={TeacherAssignments}/>
           <Route path='/' exact component={welcome}/>
       </Switch>
-    </div>
-
     </Router>
   );
 }
