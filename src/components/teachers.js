@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import '../App.css';
 class teachers extends Component {
 
     render(){
