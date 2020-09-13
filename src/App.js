@@ -10,6 +10,7 @@ import StudentAssignments from './components/studentAssignments';
 function App() {
   return (
     <Router>
+
     <div>
       <Switch>
           <Route path='/student' exact component={students}/>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/' exact component={welcome}/>
       </Switch>
     </div>
+
     </Router>
   );
 }
