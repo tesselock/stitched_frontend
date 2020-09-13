@@ -5,7 +5,6 @@ import styled from 'styled-components';
 // vh and vw may cause unwanted scrollbar space (fix later)
 const PageHeader = styled.header`
     height: 10%;
-    background-color: purple;
     width: 100%;
     display: flex;
     margin-top: 0; 
@@ -20,11 +19,12 @@ const Logo = styled.div`
     padding-top: 20px;
     padding-left: 20px;
     font-size: 4rem;
-    
+    color: white;
 `;
 
 // not perfect, eyeballed margins
 const LinkWrap = styled.div`
+    color: purple;
     flex-grow: 1;
     padding-top: 45px;
     font-size: 1.5rem;
@@ -33,7 +33,10 @@ const LinkWrap = styled.div`
 `;
 
 const LinkStyle = {
+    'margin-left': '10px',
+    'margin-right': '10px',
     'text-decoration': 'none',
+    'color': 'purple',
 }
 
 export const HeaderForTeachers = () => {
