@@ -14,14 +14,11 @@ function App() {
        <div className="title">       
           StitchEd       
         </div> 
-        
-        
       </header>
     </div>
+    <Route path='/' component={welcome}/>
     <Route path='/student' component={students}/>
     <Route path='/teacher' component={teachers}/>
-    <Route path='/' component={welcome}/>
-
     </Router>
   );
 }
